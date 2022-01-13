@@ -9,8 +9,8 @@ require (
 	github.com/Azure/go-autorest/autorest v0.11.21
 	github.com/Azure/go-autorest/autorest/adal v0.9.16
 	github.com/Azure/go-autorest/autorest/to v0.4.0
-	github.com/akamai/AkamaiOPEN-edgegrid-golang v1.1.1
 	github.com/StackExchange/dnscontrol v0.2.8
+	github.com/akamai/AkamaiOPEN-edgegrid-golang v1.1.1
 	github.com/alecthomas/assert v0.0.0-20170929043011-405dbfeb8e38 // indirect
 	github.com/alecthomas/colour v0.1.0 // indirect
 	github.com/alecthomas/kingpin v2.2.5+incompatible
@@ -18,7 +18,7 @@ require (
 	github.com/aliyun/alibaba-cloud-sdk-go v1.61.357
 	github.com/aws/aws-sdk-go v1.40.53
 	github.com/bodgit/tsig v0.0.2
-	github.com/cloudflare/cloudflare-go v0.13.2
+	github.com/cloudflare/cloudflare-go v0.30.0
 	github.com/cloudfoundry-community/go-cfclient v0.0.0-20190201205600-f136f9222381
 	github.com/datawire/ambassador v1.6.0
 	github.com/denverdino/aliyungo v0.0.0-20190125010748-a747050bb1ba
@@ -27,7 +27,6 @@ require (
 	github.com/exoscale/egoscale v0.73.2
 	github.com/ffledgling/pdns-go v0.0.0-20180219074714-524e7daccd99
 	github.com/go-gandi/go-gandi v0.0.0-20200921091836-0d8a64b9cc09
-	github.com/go-logr/logr v1.1.0 // indirect
 	github.com/golang/sync v0.0.0-20180314180146-1d60e4601c6f
 	github.com/google/go-cmp v0.5.6
 	github.com/gophercloud/gophercloud v0.21.0
