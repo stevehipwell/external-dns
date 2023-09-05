@@ -14,7 +14,7 @@ jobs:
         shell: bash
     steps:
       - name: Checkout
-        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -52,7 +52,7 @@ jobs:
         run: ct lint --check-version-increment=false
 
       - name: Set-up Kind cluster
-        uses: helm/kind-action@fa81e57adff234b2908110485695db0f181f3c67
+        uses: helm/kind-action@dda0770415bac9fc20092cacbc54aa298604d140
         with:
           wait: 120s
         if: steps.list-changed.outputs.changed == 'true'
