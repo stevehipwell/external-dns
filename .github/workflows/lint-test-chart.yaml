@@ -14,12 +14,12 @@ jobs:
         shell: bash
     steps:
       - name: Checkout
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
         with:
           fetch-depth: 0
 
       - name: Install Helm Docs
-        uses: action-stars/install-tool-from-github-release@b21a01813213cbbf482eeceda07ad03b41b754d1 # v0.2.1
+        uses: action-stars/install-tool-from-github-release@9019d0a3125e2f45a48858afb632e6dbef663d79 # v0.2.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           owner: norwoodj
@@ -40,7 +40,7 @@ jobs:
           fi
 
       - name: Install Artifact Hub CLI
-        uses: action-stars/install-tool-from-github-release@b21a01813213cbbf482eeceda07ad03b41b754d1 # v0.2.1
+        uses: action-stars/install-tool-from-github-release@9019d0a3125e2f45a48858afb632e6dbef663d79 # v0.2.2
         with:
           github_token: ${{ github.token }}
           owner: artifacthub
@@ -59,7 +59,7 @@ jobs:
           version: latest
 
       - name: Install Python
-        uses: actions/setup-python@0a5c61591373683505ea898e09a3ea4f39ef2b9c # v5.0.0
+        uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d # v5.1.0
         with:
           token: ${{ github.token }}
           python-version: "3.x"
@@ -80,7 +80,7 @@ jobs:
 
       - name: Create Kind cluster
         if: steps.changes.outputs.changed == 'true'
-        uses: helm/kind-action@dda0770415bac9fc20092cacbc54aa298604d140 # v1.8.0
+        uses: helm/kind-action@99576bfa6ddf9a8e612d83b513da5a75875caced # v1.9.0
         with:
           wait: 120s
 
