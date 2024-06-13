@@ -14,12 +14,12 @@ jobs:
         shell: bash
     steps:
       - name: Checkout
-        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           fetch-depth: 0
 
       - name: Install Helm Docs
-        uses: action-stars/install-tool-from-github-release@9019d0a3125e2f45a48858afb632e6dbef663d79 # v0.2.2
+        uses: action-stars/install-tool-from-github-release@243ac555111a84756285bf7dc55df821a55d32d9 # v0.2.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           owner: norwoodj
@@ -40,7 +40,7 @@ jobs:
           fi
 
       - name: Install Artifact Hub CLI
-        uses: action-stars/install-tool-from-github-release@9019d0a3125e2f45a48858afb632e6dbef663d79 # v0.2.2
+        uses: action-stars/install-tool-from-github-release@243ac555111a84756285bf7dc55df821a55d32d9 # v0.2.3
         with:
           github_token: ${{ github.token }}
           owner: artifacthub
